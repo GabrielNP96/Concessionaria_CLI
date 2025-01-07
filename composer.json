@@ -1,0 +1,14 @@
+{
+    "name": "gabriel/concessionariacli",
+    "description": "aplicacao que siumula uma concessionaria na cli",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Nascimento",
+            "email": "123754383+GabrielNP96@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
