@@ -9,6 +9,11 @@
             "email": "123754383+GabrielNP96@users.noreply.github.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/"
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
