@@ -10,4 +10,8 @@ class Customer {
         $this->name = $name;
         $this->document = $document;
     }
+
+    public function getInfo():string {
+        
+    }
 }
