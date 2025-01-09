@@ -2,7 +2,7 @@
 
 namespace App\Vehicles;
 
-class Vehicle {
+abstract class Vehicle {
     protected string $name;
     protected string $manufacturer;
     protected int $year;
@@ -16,4 +16,6 @@ class Vehicle {
         $this->color = $color;
         $this->price = $price;
     }
+
+    abstract function getInfo():string;
 }

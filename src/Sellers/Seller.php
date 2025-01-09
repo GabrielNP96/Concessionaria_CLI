@@ -12,4 +12,13 @@ class Seller {
         $this->userName = $userName;
         $this->password = $password;
     }
+    
+    public function getInfo():string {
+        return <<<TEXT
+        Dados do vendedor:
+        Nome: $this->name
+        Nome de usuário: $this->userName
+        -----------------------------------
+        TEXT;
+    }
 }

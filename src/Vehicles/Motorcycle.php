@@ -10,4 +10,16 @@ class Motorcycle extends Vehicle {
         parent::__construct($name, $manufacturer, $year, $color, $price);
         $this->displacement = $displacement;
     }
+
+    function getInfo():string {
+        return <<<TEXT
+        Dados do Carro:
+        Nome: $this->name
+        Fabricante: $this->manufacturer
+        Ano: $this->year
+        Cor: $this->color
+        Preço: $this->price;
+        Cilindradas: $this->displacement
+        TEXT . PHP_EOL;
+    }
 }

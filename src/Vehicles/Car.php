@@ -12,4 +12,17 @@ class Car extends Vehicle {
         $this->engine = $engine;
         $this->carDoorsQuantity = $carDoorsQuantity;
     }
+
+    function getInfo():string {
+        return <<<TEXT
+        Dados do Carro:
+        Nome: $this->name
+        Fabricante: $this->manufacturer
+        Ano: $this->year
+        Cor: $this->color
+        Preço: $this->price;
+        Motor: $this->engine
+        Quantidade de portas: $this->carDoorsQuantity
+        TEXT;
+    }
 }

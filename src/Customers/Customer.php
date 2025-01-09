@@ -12,6 +12,11 @@ class Customer {
     }
 
     public function getInfo():string {
-        
+        return <<<TEXT
+        Dados do Cliente
+        Nome: $this->name
+        Documento: $this->document
+        --------------------------
+        TEXT;
     }
 }
